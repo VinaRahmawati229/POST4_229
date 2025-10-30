@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data_kewarganegaraan_indonesia"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0932C5"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/form_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Nama Lengkap -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/nama_lengkap"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_nama_lengkap"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- NIK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nik"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_nik_16_digit"
+                android:inputType="number"
+                android:maxLength="16"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Kabupaten -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kabupaten"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etKabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_kabupaten"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Kecamatan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kecamatan"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etKecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_kecamatan"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Desa -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desa"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/etDesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukkan_desa"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- RT dan RW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rt"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/etRt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="RT"
+                        android:inputType="number"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rw"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/etRw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="RW"
+                        android:inputType="number"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Jenis Kelamin -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_kelamin"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/laki_laki"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/perempuan"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <!-- Status Pernikahan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/status_pernikahan"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatusPernikahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+        <!-- Button Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/simpan_data"
+                android:background="@drawable/button_simpan_background"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset_data"
+                android:background="@drawable/button_reset_background"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Daftar Warga -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar_warga_negara"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvEmptyData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/belum_ada_data_warga_yang_tersimpan"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:id="@+id/containerDataWarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

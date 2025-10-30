@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">POST4_229</string>
+    <string name="data_kewarganegaraan_indonesia">Data Kewarganegaraan Indonesia:</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masukkan_nama_lengkap">Masukkan nama lengkap</string>
+    <string name="nik">NIK</string>
+    <string name="masukkan_nik_16_digit">Masukkan NIK (16 digit)</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="masukkan_kabupaten">Masukkan kabupaten</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="masukkan_kecamatan">Masukkan kecamatan</string>
+    <string name="desa">Desa</string>
+    <string name="masukkan_desa">Masukkan desa</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="jenis_kelamin">Jenis Kelamin:</string>
+    <string name="laki_laki">Laki-Laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="status_pernikahan">Status Pernikahan:</string>
+    <string name="simpan_data">Simpan Data</string>
+    <string name="reset_data">Reset Data</string>
+    <string name="daftar_warga_negara">Daftar Warga Negara:</string>
+    <string name="belum_ada_data_warga_yang_tersimpan">Belum ada data warga yang tersimpan.</string>
+</resources>
